@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
+
+/****************************************************
+* Stylesheet
+* 1.general
+* 2.layout
+* 3.template
+* 4.content
+* 5.Smartphone
+* ※The breakpoint is 768 pixel, so please change it according to the site
+****************************************************/
+
+
+/****************************************************
+
+/****************************************************
+* 1.GENERAL
+****************************************************/
+
+html {
+	font-size: 10px;
+	font-family: "Noto Sans JP";
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1.6rem;
+	margin: 0;
+	padding: 0;
+	color: #333333;
+}
+.container {
+	min-width: 1120px;
+}
+a {
+	transition: all 0.3s;
+}
+a:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+.is_pc {
+	display: block;
+}
+.is_sp {
+	display: none;
+}
+.fw_bold {
+	font-weight: bold;
+}
+
+
+/****************************************************
+* 1.GENERAL
+****************************************************/
+.inner {
+	width: 96%;
+	max-width: 1120px;
+	margin: 0 auto;
+	
+}
+
+/* header */
+
+.header {
+
+}
+
+
+
+
+
+/* Footer */
+.footer {
+
+}
+/****************************************************
+* 2.LAYOUT
+****************************************************/
+.page_title {
+
+}
+.breadcrumd {
+
+}
+
+
+
+
+
+
+
+/****************************************************
+* 3.TEMPLATE
+****************************************************/
+.main {
+
+}
+.list_note01 {
+
+}
+.btn_more {
+
+}
+
+
+
+
+
+
+/****************************************************
+* 4.CONTENT
+****************************************************/
+.top_sec01 {
+
+}
+.top_sec02 {
+
+}
+
+
+
+.company_sec01 {
+	
+}
+
+
+/****************************************************
+* 1.SMARTPHONE
+****************************************************/
+
+@media only screen and (max-width: 768px) {
+	.is_pc {
+		display: none;
+	}
+	.is_sp {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
