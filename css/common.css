@@ -53,3 +53,25 @@ table {
 img {
     max-width: 100%;
 }
+a {
+    text-decoration: none;
+}
+/*text*/
+.text_center {
+    text-align: center;
+}
+.text_uppercase {
+    text-transform: uppercase;
+}
+/* font-weight*/
+.font_weight_bold {
+    font-weight: bold;
+}
+/*color*/
+.color_red {
+    color: #f22522;
+}
+/*size*/
+.font_size_24 {
+    font-size: 2.4rem;
+}
