@@ -15,34 +15,153 @@
 <body>
     <div class="container" id="index">
         <!--TOPページIDはindex、下層ページはcontents-->
-        <header class="header">
-            <h1>ロゴ、サイトタイトル</h1>
-            <div class="gNav">
-                <nav>
-                    <ul>
-                        <li><a href="">グローバルナビメニュー</a></li>
-                        <li><a href="">グローバルナビメニュー</a></li>
-                        <li><a href="">グローバルナビメニュー</a></li>
-                    </ul>
-                </nav>
+        <header id="header" class="header">
+            <div class="hd_content">
+                <div class="header_wrapper">
+                    <h1 class="logo">
+                        <a href="./">
+                            <img src="./img/common/logo_header.png" alt="福田建設株式会社">
+                            <span class="name_ja">株式会社福田建設</span>
+                        </a>
+                    </h1>
+                    <div class="btn_toggle">
+                        <div class="toggle">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+                        <!--End btn toggle-->
+                    </div>
+                    <div class="wrapper_gNav">
+                        <nav>
+                            <ul class="list">
+                                <li class="item"><a href="./company.html"><span>会社案内</span></a></li>
+                                <li class="item"><a href="./business.html"><span>事業案内</span></a></li>
+                                <li class="item"><a href="./access.html"><span>実績紹介</span></a></li>
+                                <li class="item"><a href="./recruit.html"><span>採用情報</span></a></li>
+                                <li class="mail_contact">
+                                    <a href="./contact.html">
+                                        <span>お問い合わせ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
             <!--/header-->
         </header>
         <div class="main">
+            <div class="mv">
+                <p class="ttl_mv font_weight_bold">キャッチコピーが入ります。キャッチコピーが入ります。<br> キャッチコピーが入ります。</p>
+            </div>
             <section class="top_sec01">
                 <div class="inner">
-                    コンテンツ要素
-                    <!--/top_sec01-->
+                    <h2 class="font_size_24 ttl_top_sec text_center font_weight_bold">メッセージ</h2>
+                    <p class="text_center txt">弊社は創業1957年の総合建設会社です。<br> 工場の新築や改築、大規模な倉庫の建築工事など多種多様な建設をやらせていただいておりま</p>
+                </div>
+                <!--/top_sec01-->
+            </section>
+            <section class="top_sec02">
+                <div class="wrapper_cnt">
+                    <div class="box_ttl">
+                        <h2 class="font_size_24 ttl_top_sec text_center font_weight_bold">会社案内</h2>
+                        <a class="connect_page" href="">
+                            <span class="more text_uppercase font_weight_bold">MORE</span>
+                            <img src="./img/common/common_arrow.png" alt="more">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="top_sec03">
+                <div class="wrapper_cnt left">
+                    <div class="box_ttl">
+                        <h2 class="font_size_24 ttl_top_sec text_center font_weight_bold">事業内容</h2>
+                        <a class="connect_page" href="">
+                            <span class="more text_uppercase font_weight_bold">MORE</span>
+                            <img src="./img/common/common_arrow.png" alt="more">
+                        </a>
+                    </div>
+                </div>
+                <div class="wrapper_cnt right">
+                    <div class="box_ttl">
+                        <h2 class="font_size_24 ttl_top_sec text_center font_weight_bold">実績紹介</h2>
+                        <a class="connect_page" href="">
+                            <span class="more text_uppercase font_weight_bold">MORE</span>
+                            <img src="./img/common/common_arrow.png" alt="more">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="top_sec04">
+                <div class="inner">
+                    <div class="wrapper_cnt left">
+                        <h2 class="font_size_24 ttl_top_sec text_center font_weight_bold">お問い合わせ</h2>
+                        <hr>
+                        <p class="text_center txt">
+                            ご相談・ご質問などございましたら、<br>お気軽にお問い合わせください。
+                        </p>
+                    </div>
+                    <div class="wrapper_cnt right text_center">
+                        <a class="phone" href="">
+                            <img src="./img/top/icon_phone.png" alt="">
+                            <span>048-928-3536</span>
+                        </a>
+                        <span class="time">営業時間 8:00 - 17:00</span>
+                        <a class="connect_page" href="./contact.html">
+                            <span class="more font_weight_bold">お問い合わせフォームはこちら</span>
+                            <img src="./img/common/common_arrow.png" alt="more">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="top_sec05">
+                <div class="wrapper_cnt">
+                    <div class="box_ttl">
+                        <h2 class="font_size_24 ttl_top_sec text_center font_weight_bold">採用情報</h2>
+                        <a class="connect_page" href="">
+                            <span class="more text_uppercase font_weight_bold">MORE</span>
+                            <img src="./img/common/common_arrow.png" alt="more">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="top_sec06">
+                <div class="wrapper_cnt">
+                    <div class="wrapper_ttl">
+                        <h2 class="font_size_24 ttl_top_sec text_center font_weight_bold">お知らせ</h2>
+                    </div>
+                    <ul class="top_news">
+                        <li class="item">
+                            <span class="date">2021年3月20日</span>
+                            <span class="desc">ホームページを公開致しました。</span>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <!--/main-->
         </div>
-        <footer class="footer">
-            <div class="pagetop"><img src="./img/common/icon_pagetop01.png" alt="" /></div>
-            <div>フッター内要素</div>
-            <div class="copyright"> Copyright(c)2020 xxxxxxxx. </div>
-            <!--/footer-->
-        </footer>
+		<footer class="footer">
+			<div class="inner">
+                <h1 class="logo">
+                    <a href="./">
+                        <img src="img/common/logo_footer.png" alt="福田建設株式会社" />
+                        <span class="name_ja">株式会社福田建設</span>
+                    </a>
+                </h1>
+				<!--End logo-->
+				<ul class="footer_list">
+                    <li class="item"><a href="./">TOP</a></li>
+					<li class="item"><a href="./company.html">会社案内</a></li>
+					<li class="item"><a href="./business.html">事業案内</a></li>
+					<li class="item"><a href="./results.html">実績紹介</a></li>
+					<li class="item"><a href="./recruit.html">採用情報</a></li>
+					<li class="item"><a href="./privacypolicy.html">個人情報保護方針</a></li>
+				</ul>
+				<!--End footer link-->
+			</div>
+			<div class="copyright">Copyright&copy;福田建設株式会社 all rights reserved.</div>
+		</footer>
         <!--/container-->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
