@@ -79,18 +79,24 @@ a:hover {
 /****************************************************
 * 2.LAYOUT
 ****************************************************/
-.page_title {
-
+.ttl_sec {
+	font-size: 2.6rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	position: relative;
+	text-align: center;
 }
-.breadcrumd {
-
+.ttl_sec::after{
+	content: "";
+	position: absolute;
+	background-color:#f9c816;
+	width: 80px;
+	height: 3px;
+	bottom: -20px;
+    margin-left: -96px;
 }
-
-
-
-
-
-
+  
 
 /****************************************************
 * 3.TEMPLATE
