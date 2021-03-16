@@ -988,6 +988,10 @@ a:hover {
 		max-width: 96%;
 		margin: 0 auto;
 	}
+	.inner_in {
+		max-width: 96%;
+		margin: 0 auto;
+	}
     	/*header*/
 	.header .hd_content {
 		background-color: #ffffff;
@@ -1070,8 +1074,23 @@ a:hover {
     .top_sec04 .wrapper_cnt {
         width: 100%;
     }
-}
 
+	/*Result page*/
+	.results_sec01 .list_img {
+		flex-direction: column;
+	}
+	.results_sec01 .list_img li {
+		width: 100%;
+	}
+	.results_sec01 .list_img li figure {
+		text-align: center;
+	}
+	.result_cnt03, 
+	.result_cnt02, 
+	.result_cnt01 {
+		margin-top: 30px;
+	}
+}
 
 
 
