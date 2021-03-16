@@ -940,6 +940,36 @@ a:hover {
 	background-color:#f2f2f2;
 }
 
+/*Results page on PC*/
+.results_sec01 {
+	padding: 70px 0 90px;
+}
+.result_cnt01 {
+	margin: 50px 0 0;
+}
+.results_sec01 .list_img {
+	margin-top: 30px;
+}
+.results_sec01 .list_img {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.results_sec01 .list_img li {
+	width: 320px;
+	margin-bottom: 20px;
+}
+.results_sec01 figure figcaption {
+	font-size: 12px;
+	line-height: 1.33;
+	margin-top: 5px;
+}
+.result_cnt03, 
+.result_cnt02, 
+.result_cnt01 {
+	margin-top: 50px;
+}
 /****************************************************
 * 1.SMARTPHONE
 ****************************************************/
