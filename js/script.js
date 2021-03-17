@@ -299,3 +299,16 @@ $(document).on('click', 'a[href^="#"]', function(event) {
       target.style.height = target.scrollHeight + "px";
   }
 })();
+(function() {
+    if(window.ScrollHint) {
+        new ScrollHint('.js-scrollable', {
+            scrollHintIconAppendClass: 'custom-scroll-hint-icon', // add class custom default scroll hint icon
+            suggestiveShadow: false,
+            applyToParents: true,
+            i18n: {
+                scrollable: 'スクロールできます'
+            }
+        });
+    }
+})();
+  
