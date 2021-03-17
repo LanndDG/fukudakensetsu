@@ -89,7 +89,7 @@ a:hover {
 	min-width: 100%;
 }
 .index .hd_content {
-	min-width: 100%;
+	min-width: auto;
 }
 .header.activer .hd_content{
 	background: #ffffff;
@@ -246,7 +246,7 @@ a:hover {
 }
 
 .footer .footer_list .item:last-child {
-	margin-right: 0;
+	border-right: none;
 }
 
 .footer .footer_list a {
@@ -479,9 +479,10 @@ a:hover {
 .top_sec06 {
 	background-image: url(../img/top/bg_top_sec06.jpg);
 	background-position: center;
+	margin-top: -1px;
 }
 .top_sec06 .wrapper_cnt {
-	padding: 76px 0 140px;
+	padding: 75px 0 140px;
 }
 .top_sec06 .wrapper_ttl {
 	display: flex;
@@ -709,7 +710,13 @@ a:hover {
 }
 @media only screen and (max-width: 1120px) {
 	.index .header_wrapper .logo {
-		margin-left: 30px;
+		margin-left: 20px;
+	}
+	.wrapper_gNav nav .list .mail_contact {
+		margin-left: 12px;
+	}
+	.wrapper_gNav nav .list .item a span {
+		padding: 0 12px;
 	}
 }
 /****************************************************
