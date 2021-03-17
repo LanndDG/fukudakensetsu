@@ -991,6 +991,37 @@ a:hover {
 .business_sec02 .list_img {
 	margin-top: 30px;
 }
+
+/*Results page on PC*/
+.results_sec01 {
+	padding: 70px 0 90px;
+}
+.result_cnt01 {
+	margin: 50px 0 0;
+}
+.results_sec01 .list_img {
+	margin-top: 30px;
+}
+.results_sec01 .list_img {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.results_sec01 .list_img li {
+	width: 320px;
+	margin-bottom: 20px;
+}
+.results_sec01 figure figcaption {
+	font-size: 12px;
+	line-height: 1.33;
+	margin-top: 5px;
+}
+.result_cnt03, 
+.result_cnt02, 
+.result_cnt01 {
+	margin-top: 50px;
+}
 /****************************************************
 * 1.SMARTPHONE
 ****************************************************/
@@ -1006,6 +1037,10 @@ a:hover {
 		min-width: auto;
 	}
 	.inner {
+		max-width: 96%;
+		margin: 0 auto;
+	}
+	.inner_in {
 		max-width: 96%;
 		margin: 0 auto;
 	}
@@ -1090,10 +1125,93 @@ a:hover {
     }
     .top_sec04 .wrapper_cnt {
         width: 100%;
-    }
+	}
+	/* Page Title */
+	.page_title {
+		height: 120px;
+	}
+	.page_title h3{
+		font-size: 2.7rem;
+		padding-top: 27px;
+	}
+	.business_sec01 {
+		margin: 42px 0 4px;
+	}
+	.ttl_sec {
+		font-size: 2.3rem;
+	}
+
+	/*Result page*/
+	.results_sec01 .list_img {
+		flex-direction: column;
+	}
+	.results_sec01 .list_img li {
+		width: 100%;
+	}
+	.results_sec01 .list_img li figure {
+		text-align: center;
+	}
+	.result_cnt03, 
+	.result_cnt02, 
+	.result_cnt01 {
+		margin-top: 30px;
+	}
+	/* Business page */
+	.business_sec01 .desc_ttl {
+		font-size: 2rem;
+		line-height: 1.8;
+		margin: 16px 0 31px;
+	}
+	.business_sec01 .list {
+		font-size: 1.4rem;
+	}
+	.business_sec01 .list_img, .business_sec02 .list_img {
+		justify-content: space-around;
+	}
+	.business_sec02 .ttl_sec {
+		margin-bottom: 30px;
+	}
+	.business_sec01 figure:nth-child(odd){
+		margin-right: 20px;
+	}
+	.busi_table tbody td {
+		padding: 5px 15px;
+		font-size: 1.4rem;
+	}	
+	.busi_table tbody th {
+		font-size: 1.4rem;
+		width: 130px;
+	}
+	.busi_table01 tbody th {
+		min-width: 130px;
+	}
+	.business_sec02 {
+		margin-bottom: 30px;
+	}
+	.business_sec02 .list_img img {
+		width: fit-content;
+		align-self: center;
+		margin-bottom: 20px;
+	}
+
 }
+@media only screen and (max-width: 690px) {
+	.business_sec01 figure:nth-child(odd) {
+		margin-right: 0;
+	}	
+	.business_sec01 .list_img, .business_sec02 .list_img {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.list_img figure {
+		align-self: center;
+	}
 
+	.table_width {
+		width: 648px;
+	}
 
+}
 
 
 
