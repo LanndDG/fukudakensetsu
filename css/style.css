@@ -774,26 +774,29 @@ a:hover {
 
 /* Recruit */
 .recruit_sec01 {
-	margin-top: 70px;
+	margin-top: 62px;
 }
 .recruit_table {
-	margin-top: 70px;
+	margin-top: 53px;
 }
 .recruit_table tr td{
 	border: solid 1px #cccccc;
-	padding: 20px;
+	padding: 18px 39px;
 }
 .recruit_table tr td span {
 	display: block;
 }
 .recruit_table tr td .ttl_table01 { 
-	padding-top: 15px;
+	padding-top: 7px;
 	font-size: 1.6rem;
-	line-height: 1.71;
+	line-height: 1.5;
 	font-weight: 500;
 }
+/* .recruit_table tr td .first_list {
+	padding-top: 8px;
+} */
 .recruit_table tr td .ttl_table02 {
-	padding-top: 15px;
+	padding-top: 13px;
 	font-size: 1.4rem;
 	line-height: 1.71;
 	font-weight: 500;
@@ -813,16 +816,20 @@ a:hover {
 	background-color: #f6f6f6;
 	border: solid 1px #cccccc;
 	font-weight: bold;
+	vertical-align: middle;
+	font-size: 1.6rem;
+	line-height: 1.5;
 }
 .recruit_sec02 {
-	margin-top: 60px;
+	margin: 111px 0 100px;
 }
+
 .recruit_sec02 .desc {
-	margin: 72px 0 29px;
+	margin: 48px 0 20px;
 }
 .box_infor {
 	background-color: #e8e7e7;
-	padding: 70px;
+	padding: 64px 82px 48px 72px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -832,20 +839,37 @@ a:hover {
 	font-size: 3rem;
 	font-weight: bold;
 	line-height: 0.93;
-	letter-spacing: 1.5px;
-	padding-bottom: 20px;
+	letter-spacing: 2.4px;
+	padding-bottom: 22px;
 }
 .recruit_sec02 .left_content .phone {
 	font-size: 3.8rem;
 	font-weight: bold;
 	line-height: 0.53;
 	color: #a90101;
-	padding-top: 15px;
+}
+.recruit_sec02 .right_content {
+	align-self: center;
+}
+.recruit_sec02 .left_content .phone span { 
+	position: relative;
+	position: relative;
+    padding-left: 25px;
+}
+.recruit_sec02 .left_content .phone span::before { 
+	content: "";
+	background-image: url("../img/recruit/icon_phone.png");
+	position: absolute;
+	width: 20px;
+	height: 31px;
+	bottom: 10px;
+	left: 0;
 }
 .recruit_sec02 .left_content .address {
 	font-size: 1.8rem;
 	font-weight: bold;
 	line-height: 1.33;
+	margin-top: 6px;
 }
 .recruit_sec02 .left_content .sub_desc {
 	font-size: 1.6rem;
@@ -859,18 +883,16 @@ a:hover {
 .recruit_sec02 .btn .confirmation {
 	padding: 48px 137px;
 }
-.recruit_sec02 {
-	margin-bottom: 100px;
-}
+
 /* Company page PC */
 .company_sec01 {
-	margin: 70px 0 120px;
+	margin: 63px 0 111px;
 }
 .company_sec01 .ctn {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 50px;
+	margin-top: 45px;
 	padding: 0 60px;
 
 }
@@ -878,27 +900,25 @@ a:hover {
 	font-size: 1.6rem;
 	line-height: 1.5;
 	margin-top: 10px;
+	letter-spacing: 1px;
 }
 .company_sec01 .ctn .left_ctn {
 	flex-basis: calc(100% - 313px);
 }
 .company_sec01 .left_ctn .ctn_note {
     float: right;
-    text-align: right;
+	text-align: right;
+	margin-top: 26px;
 }
-.company_sec01 p.ctn01_note {
-	font-size: 1.8rem;
-	font-weight: normal;
-	letter-spacing: 0.9px;
-	font-weight: 500;
+.company_sec01 .ctn .right_ctn {
+	margin-top: 30px;
 }
-.company_sec01 p.ctn02_note {
-	font-size: 2.4rem;
-	font-weight: 700;
-	margin-top: 0;
-}
+
 .company_sec02 {
 	margin-bottom: 100px;
+}
+.company_sec02 table {
+    margin-top: 50px;
 }
 .company_sec02 table th span {
 	color: #f9c816;
@@ -922,6 +942,7 @@ a:hover {
 	width: 350px;
 	height: 60px;	
 	border: solid 1px #000000;
+	margin-top: 17px;
 }
 .btn_ctn {
 	font-size: 1.6rem;
@@ -932,7 +953,9 @@ a:hover {
 	background-color: #ffffff;
 	height: 100%;
     width: 100%;
-	
+}
+.company_sec02 table td .company_fax {
+	display: inline;
 }
 /* Business page on PC */
 .business_sec01 {
@@ -1405,7 +1428,112 @@ a:hover {
 		align-self: center;
 		margin-bottom: 20px;
 	}
-
+	/* Company page SP */
+	.company_sec01 {
+		margin: 42px 0 31px;
+	}
+	.company_sec01 .ctn {
+		margin-top: 14px;
+		flex-direction: column;
+		padding: 0;
+	}
+	.company_sec01 .ctn p {
+		font-size: 1.4rem;
+	}
+	.company_sec01 p.ctn01_note {
+		font-size: 1.6rem;
+	}
+	.company_sec01 p.ctn02_note {
+		font-size: 2rem;
+	}
+	.company_sec01 .right_ctn {
+		margin-top: 30px;
+		align-self: center;
+	}
+	.company_sec02 table {
+		margin-top: 30px;
+	}
+	.company_sec02 table td {
+		padding-left: 15px;
+		font-size: 1.4rem;
+		padding-bottom: 25px;
+	}
+	.company_sec02 table th span {
+		font-size: 1.4rem;
+		width: 120px;
+	}
+	.company_sec02 table td .company_fax {
+		text-indent: -8px;
+		display: block;
+	}
+	.company_sec02 .text_edit {
+		padding-left: 6px;
+		text-indent: -16px;
+	}
+	.company_sec02 {
+		margin-bottom: 50px;
+	}
+	.btn_ctn {
+		font-size: 1.4rem;
+	}
+	.company_sec02 .submit {
+		width: 270px;
+	}
+	/* Recruit page on SP */
+	.recruit_sec01 {
+		margin-top: 43px;
+	}
+	.recruit_table {
+		margin-top: 30px;
+	}
+	.recruit_table tr th {
+		font-size: 1.4rem;
+		width: 110px;
+		padding: 10px;
+	}
+	.recruit_table tr td {
+		padding: 10px 15px;
+	}
+	.recruit_table tr td .ttl_table01 {
+		font-size: 1.6rem;
+	}
+	.recruit_table .text_edit {
+		padding-left: 13px;
+		text-indent: -15px;
+	}
+	.recruit_table .child_list {
+		padding-left: 15px;
+	}
+	.box_infor {
+		flex-direction: column;
+		padding: 40px 20px;
+	}
+	.recruit_sec02 .right_content {
+		align-self: flex-start;
+		margin-top: 30px;
+	}
+	.recruit_sec02 .left_content h4 {
+		font-size: 2.5rem;
+	}
+	.recruit_sec02 .left_content .phone {
+		font-size: 3.5rem;
+	}
+	.recruit_sec02 .left_content .address {
+		font-size: 1.6rem;
+	}
+	.recruit_sec02 .btn {
+		width: 270px;
+		height: 80px;
+	}
+	.recruit_sec02 .btn .confirmation {
+		padding: 36px 20px;
+	}
+	.recruit_sec02 {
+		margin: 33px 0 50px;
+	}
+	.recruit_sec02 .desc {
+		margin: 30px 0 20px;
+	}
 }
 @media only screen and (max-width: 690px) {
 	.business_sec01 figure:nth-child(odd) {
