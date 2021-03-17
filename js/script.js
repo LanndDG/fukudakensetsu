@@ -222,9 +222,9 @@ updateHeader();
 // Anchor link smooth
 $(document).on('click', 'a[href^="#"]', function(event) {
   event.preventDefault();
-  var offsetSize = $("header").innerHeight() + 50;
+  var offsetSize = $("header").innerHeight() + 5;
   $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top -offsetSize
+      scrollTop: $($.attr(this, 'href')).offset().top
   }, 900);
 });
 
