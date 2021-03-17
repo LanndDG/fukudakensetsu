@@ -875,13 +875,14 @@ a:hover {
 	font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.75;
+  display: inline-block;
 }
 .recruit_sec02 .btn {
 	width: 401px;
     height: 100px;
 }
 .recruit_sec02 .btn .confirmation {
-	padding: 48px 137px;
+	padding: 48px 0;
 }
 
 /* Company page PC */
@@ -1045,7 +1046,9 @@ a:hover {
 .business_sec02 .list_img {
 	margin-top: 30px;
 }
-
+.business_sec02 .edit_text  tbody td {
+	line-height: 2;
+}
 /*Results page on PC*/
 .results_sec01 {
 	padding: 70px 0 90px;
