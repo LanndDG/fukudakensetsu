@@ -82,7 +82,7 @@ a:hover {
 	width: 100%;
 	height: 70px;
 	min-width: 1120px;
-	max-width: 1560px;
+	max-width: 1600px;
 	margin: auto;
 }
 .index {
@@ -110,7 +110,7 @@ a:hover {
 }
 .header_wrapper .logo {
 	display: flex;
-	margin-left: 130px;
+	margin-left: 144px;
 }
 .logo a {
 	display: flex;
@@ -145,7 +145,7 @@ a:hover {
 	line-height: 1;
 	letter-spacing: 1.26px;
 	text-align: left;
-	padding: 0 14px;
+	padding: 0 13px;
 }
 .wrapper_gNav nav .list .mail_contact {
 	width: 142px;
@@ -260,7 +260,7 @@ a:hover {
 }
 
 .footer .copyright {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 500;
 	line-height: 2.33;
 	text-align: center;
@@ -380,7 +380,7 @@ a:hover {
 	background-position: center;
 	background-size: cover;
 	text-align: center;
-	padding: 303px 0 310px;
+	padding: 304px 0 310px;
 }
 .mv .ttl_mv {
 	font-size: 3.2rem;
@@ -468,10 +468,16 @@ a:hover {
 	width: 350px;
 	height: 75px;
 	margin-top: 22px;
+	display: block;
 }
 .top_sec04 .connect_page .more {
 	font-size: 1.6rem;
 	margin-bottom: 11px;
+	display: block;
+	padding-top: 24px;
+}
+.top_sec04 .connect_page img {
+	padding-bottom: 16px;
 }
 .top_sec04 .inner {
 	display: flex;
@@ -531,12 +537,12 @@ a:hover {
 	margin-top: -1px;
 }
 .top_sec06 .wrapper_cnt {
-	padding: 75px 0 140px;
+	padding: 76px 0 140px;
 }
 .top_sec06 .wrapper_ttl {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 30px;
+	margin-bottom: 31px;
 }
 .top_sec06 .ttl_top_sec {
 	z-index: 1;
@@ -566,14 +572,17 @@ a:hover {
 	line-height: 1.93;
 }
 .top_sec06 .item .date {
-	margin-right: 5px;
+	margin-right: 13px;
 }
 /* CONTACT*/
+.contact_sec01 {
+	margin-top: 60px;
+}
 .contact_sec01 .decs_txt01 {
 	letter-spacing: 0.4px;
 	position: relative;
 	line-height: 2;
-	margin-top: 51px;
+	margin-top: 47px;
 	margin-bottom: 3px;
 	color: #333333;
 }
@@ -730,13 +739,12 @@ a:hover {
 }
 /* PRiVACY*/
 .privacypolicy_sec {
+	margin-top: 60px;
 	margin-bottom: 93px;
 }
-
 .privacypolicy_sec .content {
-	padding: 0 20px 0 23px;
+	margin-top: 47px;
 }
-
 .privacypolicy_sec .decs01 {
 	color: #333333;
 	line-height: 1.73;
@@ -1077,7 +1085,7 @@ a:hover {
 		padding-bottom: 13px;
 	}
 	.inner_in {
-		max-width: 96%;
+		max-width: 100%;
 		margin: 0 auto;
 	}
     	/*header*/
@@ -1244,14 +1252,15 @@ a:hover {
 	.top_sec04 .connect_page .more {
 		font-size: 1.4rem;
 		margin-bottom: 8px;
+		padding-top: 20px;
 	}
 	.top_sec06 .wrapper_cnt {
-		padding: 51px 0 60px;
+		padding: 41px 10px 40px;
+	}
+	.top_sec06 .item {
+		flex-direction: column;
 	}
 	/* privacy */
-	.privacypolicy_sec .content {
-		padding: 0 10px;
-	}
 	.privacypolicy_sec .decs01 {
 		margin: 25px 0 20px;
 		text-align: justify;
@@ -1272,15 +1281,22 @@ a:hover {
 		text-align: justify;
 	}
 	.privacypolicy_sec {
-		margin-bottom: 50px;
+		margin-top: 30px;
+		margin-bottom: 46px;
+	}
+	.privacypolicy_sec .content {
+		margin-top: 19px;
 	}
 	.privacypolicy_sec .content ul li {
 		text-indent: -19px;
 		padding-left: 19px;
 	}
 	/* contact */
-	.contact_sec01 .decs_txt01 {
+	.contact_sec01 {
 		margin-top: 30px;
+	}
+	.contact_sec01 .decs_txt01 {
+		margin-top: 21px;
 		font-size: 1.4rem;
 	}
 	.table-contact tbody tr th {
