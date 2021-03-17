@@ -1127,6 +1127,7 @@ a:hover {
 	content: '';
 	width: 7px;
 	height: 7px;
+	min-width: 7px;
 	background-color: #f9c816;
 	margin-right: 7px;
 	display: inline-block;
@@ -1602,6 +1603,40 @@ a:hover {
 	}
 	.recruit_sec02 .desc {
 		margin: 30px 0 20px;
+	}
+
+	/*History*/
+	.hisrory_wrapper .detail .datetime {
+		min-width: 80px;
+		width: 80px;
+	}
+	.hisrory_wrapper .year {
+		width: 80px;
+		min-width: 80px;
+	}
+	.hisrory_wrapper .year .bold {
+		font-size: 1.4rem;
+	}
+	.hisrory_wrapper .detail {
+		font-size: 1.4rem;
+		padding: 10px 5px;
+	}
+	.hisrory_wrapper .detail .desc {
+		line-height: 1.5;
+	}
+	.history_sec01 .img_wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.history_sec01 .img_wrapper figure {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.history_sec01 .img_wrapper img:last-child {
+		margin-bottom: 0;
+	}
+	.history_sec01 {
+		padding: 50px 0 40px;
 	}
 }
 @media only screen and (max-width: 690px) {
