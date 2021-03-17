@@ -1025,7 +1025,7 @@ a:hover {
 
 /*History*/
 .history_sec01 {
-	padding: 70px 0 90px;
+	padding: 70px 0 100px;
 }
 .hisrory_wrapper {
 	display: flex;
@@ -1084,7 +1084,12 @@ a:hover {
 .detail_wrapper {
 	width: 100%;
 }
-
+.history_sec01 .img_wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 50px;
+}
 
 /****************************************************
 * 1.SMARTPHONE
