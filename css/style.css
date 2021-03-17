@@ -108,6 +108,12 @@ a:hover {
 	max-width: 1920px;
 	margin: 0 auto;
 }
+#contents .header_wrapper {
+	max-width: 1450px;
+}
+#contents .header_wrapper .logo {
+	margin-left: 0;
+}
 .header_wrapper .logo {
 	display: flex;
 	margin-left: 144px;
@@ -576,7 +582,7 @@ a:hover {
 }
 /* CONTACT*/
 .contact_sec01 {
-	margin-top: 60px;
+	margin-top: 61px;
 }
 .contact_sec01 .decs_txt01 {
 	letter-spacing: 0.4px;
@@ -591,7 +597,7 @@ a:hover {
 	letter-spacing: 0.4px;
 	position: relative;
 	line-height: 1.5;
-	margin-bottom: 30px;
+	margin-bottom: 36px;
 	color: #333333;
 }
 
@@ -739,7 +745,7 @@ a:hover {
 }
 /* PRiVACY*/
 .privacypolicy_sec {
-	margin-top: 60px;
+	margin-top: 61px;
 	margin-bottom: 93px;
 }
 .privacypolicy_sec .content {
@@ -1049,7 +1055,8 @@ a:hover {
 	margin-top: 50px;
 }
 @media only screen and (max-width: 1120px) {
-	.index .header_wrapper .logo {
+	.index .header_wrapper .logo,
+	#contents .header_wrapper .logo {
 		margin-left: 20px;
 	}
 	.wrapper_gNav nav .list .mail_contact {
