@@ -266,12 +266,12 @@ a:hover {
 }
 .ttl_sec::after{
 	content: "";
-	position: absolute;
 	background-color:#f9c816;
 	width: 80px;
 	height: 3px;
-	bottom: -20px;
-    margin-left: -96px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 14px;
 }
 .page_title{
 	background-image: url('../img/common/bg_banner.png');
@@ -286,7 +286,7 @@ a:hover {
 	line-height: 2.79;
 	letter-spacing: 1.7px;
 	text-align: left;
-	padding-top: 35px;
+	padding-top: 33px;
 }
 .breadcrumb {
 	background-color: #131313;
@@ -302,7 +302,7 @@ a:hover {
 	color: #e9e9e9;
 	display: inline-block;
 	position: relative;
-	padding: 5px 30px 4px 0px;
+	padding: 4px 36px 5px 0px;
 }
 .breadcrumb ul li a{
 	color: inherit;
@@ -311,6 +311,8 @@ a:hover {
 	content: ">";
 	position: absolute;
 	padding-left: 15px;
+	font-size: 1.7rem;
+    top: -1px;
 
 }
 .ttl_sec01 {
@@ -902,25 +904,29 @@ a:hover {
 }
 /* Business page on PC */
 .business_sec01 {
-	margin: 70px 0 90px;
+	margin: 62px 0 82px;
 }
 .business_sec01 .desc_ttl {
 	font-size: 2.6rem;
 	line-height: 2.31;
 	text-align: center;
-	margin: 50px 0 67px;
+	margin: 26px 0 52px;
 }
 .business_sec01 .list{
 	font-weight: bold;
 	font-size: 1.6rem;
 	line-height: 1.7;
-	padding: 20px 7px 30px;
+	padding: 15px 0 24px;
 }
-.business_sec01 .list_img {
+.business_sec01 .list_img,
+.business_sec02 .list_img{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+.business_sec01 figure {
+	max-width: 320px;
 }
 .business_sec01 figure figcaption {
 	font-size: 1.2rem;
@@ -928,8 +934,15 @@ a:hover {
 	letter-spacing: 0.3px;
 	padding: 10px 0 30px;
 }
-.business_sec02{
-	margin:120px 0 100px ;
+.business_sec02 { 
+	margin-bottom: 100px ;
+}
+.business_sec02 .ttl_sec { 
+	margin-bottom: 50px;
+}
+.busi_table {
+	margin-bottom: 20px;
+	width: 100%;
 }
 .busi_table tbody th {
 	width: 240px;
@@ -938,6 +951,45 @@ a:hover {
 	letter-spacing: 0.8px;
 	text-align: center;
 	background-color:#f2f2f2;
+	border: solid 1px #b3b3b3;
+	vertical-align: middle;
+}
+.busi_table tbody td {
+	padding: 18px 27px;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	letter-spacing: 0.8px;
+	text-align: left;
+	border: solid 1px #b3b3b3;
+	vertical-align: middle;
+	text-align: left;
+}
+.busi_table01 tbody td {
+	text-align: center;	
+	line-height: 2;
+}
+.busi_table01 tbody td:nth-child(2n),
+.busi_table01 tbody td:nth-child(3n) {
+	width: 29%;
+}
+.busi_table01 tbody td:nth-child(5n){
+	min-width: 89px;
+}
+.busi_table01 tbody th {
+	width: 27%;
+}
+.edit_table tbody th {
+	width: 240px;
+	min-width: 240px;
+}
+.edit_table tbody td {
+	width: 35% !important;
+}
+.busi_table01 tbody td {
+	padding: 11px 26px 12px;
+}
+.business_sec02 .list_img {
+	margin-top: 30px;
 }
 
 /*Results page on PC*/
@@ -1073,7 +1125,21 @@ a:hover {
     }
     .top_sec04 .wrapper_cnt {
         width: 100%;
-    }
+	}
+	/* Page Title */
+	.page_title {
+		height: 120px;
+	}
+	.page_title h3{
+		font-size: 2.7rem;
+		padding-top: 27px;
+	}
+	.business_sec01 {
+		margin: 42px 0 4px;
+	}
+	.ttl_sec {
+		font-size: 2.3rem;
+	}
 
 	/*Result page*/
 	.results_sec01 .list_img {
@@ -1090,8 +1156,62 @@ a:hover {
 	.result_cnt01 {
 		margin-top: 30px;
 	}
-}
+	/* Business page */
+	.business_sec01 .desc_ttl {
+		font-size: 2rem;
+		line-height: 1.8;
+		margin: 16px 0 31px;
+	}
+	.business_sec01 .list {
+		font-size: 1.4rem;
+	}
+	.business_sec01 .list_img, .business_sec02 .list_img {
+		justify-content: space-around;
+	}
+	.business_sec02 .ttl_sec {
+		margin-bottom: 30px;
+	}
+	.business_sec01 figure:nth-child(odd){
+		margin-right: 20px;
+	}
+	.busi_table tbody td {
+		padding: 5px 15px;
+		font-size: 1.4rem;
+	}	
+	.busi_table tbody th {
+		font-size: 1.4rem;
+		width: 130px;
+	}
+	.busi_table01 tbody th {
+		min-width: 130px;
+	}
+	.business_sec02 {
+		margin-bottom: 30px;
+	}
+	.business_sec02 .list_img img {
+		width: fit-content;
+		align-self: center;
+		margin-bottom: 20px;
+	}
 
+}
+@media only screen and (max-width: 690px) {
+	.business_sec01 figure:nth-child(odd) {
+		margin-right: 0;
+	}	
+	.business_sec01 .list_img, .business_sec02 .list_img {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.list_img figure {
+		align-self: center;
+	}
+
+	.table_width {
+		width: 648px;
+	}
+
+}
 
 
 
