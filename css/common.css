@@ -53,9 +53,6 @@ table {
 img {
     max-width: 100%;
 }
-a {
-    text-decoration: none;
-}
 /*text*/
 .text_center {
     text-align: center;
@@ -74,4 +71,10 @@ a {
 /*size*/
 .font_size_24 {
     font-size: 2.4rem;
+}
+
+@media only screen and (max-width:768px) {
+    .font_size_24 {
+        font-size: 2rem;
+    }
 }
