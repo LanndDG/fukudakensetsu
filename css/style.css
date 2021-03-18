@@ -38,12 +38,12 @@ body::after {
 	background-position: center;
 	background-size: cover;
 	height: 349px;
-    width: 349px;
-    display: block;
-    position: absolute;
-    bottom: 66px;
-    right: 11%;
-    z-index: -1;
+	width: 349px;
+	display: block;
+	position: absolute;
+	bottom: 66px;
+	right: 11%;
+	z-index: -1;
 }
 .container {
 	min-width: 1120px;
@@ -123,10 +123,7 @@ a:hover {
 	margin: 0 auto;
 }
 #contents .header_wrapper {
-	max-width: 1450px;
-}
-#contents .header_wrapper .logo {
-	margin-left: 0;
+	max-width: 1600px;
 }
 .header_wrapper .logo {
 	display: flex;
@@ -286,10 +283,6 @@ a:hover {
 	font-weight: bold;
 	text-align: left;
 	color: #ffffff;
-}
-
-.footer .footer_list a:hover {
-	text-decoration: underline;
 }
 
 .footer .copyright {
@@ -1287,6 +1280,12 @@ a:hover {
 	display: flex;
 	justify-content: center;
 }
+@media only screen and (max-width: 1600px) {
+	.index .header_wrapper .logo,
+	#contents .header_wrapper .logo {
+		margin-left: 20px;
+	}
+}
 @media only screen and (max-width: 1440px) {
 	body::after {
 		right: 0;
@@ -1299,10 +1298,6 @@ a:hover {
 	}
 }
 @media only screen and (max-width: 1120px) {
-	.index .header_wrapper .logo,
-	#contents .header_wrapper .logo {
-		margin-left: 20px;
-	}
 	.wrapper_gNav nav .list .mail_contact {
 		margin-left: 12px;
 	}
@@ -1717,7 +1712,7 @@ a:hover {
 	}
 	/* Recruit page on SP */
 	.recruit_sec01 {
-		margin-top: 43px;
+		margin-top: 42px;
 	}
 	.recruit_table {
 		margin-top: 30px;
