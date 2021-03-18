@@ -87,14 +87,14 @@ a:hover {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 60px;
+	height: 70px;
 	margin: 0 auto;
 	z-index: 3;
 	background-color: #ffffff;
 }
 .hd_content {
 	width: 100%;
-	height: 60px;
+	height: 70px;
 	min-width: 1120px;
 	max-width: 1600px;
 	margin: auto;
@@ -1341,9 +1341,13 @@ a:hover {
 		margin: 0 auto;
 	}
     	/*header*/
+	.header {
+		height: 60px;
+	}
 	.header .hd_content {
 		background-color: #ffffff;
 		min-width: auto;
+		height: 60px;
 	}
 	.header_wrapper {
 		display: flex;
