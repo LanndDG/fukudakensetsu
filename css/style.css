@@ -354,7 +354,7 @@ a:hover {
 .breadcrumb ul li a{
 	color: inherit;
 }
-.breadcrumb ul li:first-child::after{
+.breadcrumb ul li:not(:last-child)::after{
 	content: ">";
 	position: absolute;
 	padding-left: 15px;
@@ -1150,13 +1150,12 @@ a:hover {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding-left: 10px;
+	margin-left: 8px;
 } 
 .hisrory_wrapper .detail .datetime {
-	margin-left: 9px;
-	width: 120px;
-	min-width: 120px;
-	font-display: flex;
+	width: 112px;
+	min-width: 112px;
+	display: flex;
 	align-items: center;
 }
 .hisrory_wrapper .detail::before {
@@ -1165,13 +1164,14 @@ a:hover {
 	height: 7px;
 	min-width: 7px;
 	background-color: #f9c816;
-	margin-right: 7px;
+	margin-right: 5px;
 	display: inline-block;
 }
 .hisrory_wrapper .detail .desc {
 	line-height: 2.25;
 	letter-spacing: 0.8px;
 	text-align: justify;
+	padding: 5px 0;
 }
 .detail_wrapper {
 	width: 100%;
