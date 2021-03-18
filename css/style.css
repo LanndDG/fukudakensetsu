@@ -30,6 +30,20 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #333333;
+	position: relative;
+}
+body::after {
+	content: '';
+	background-image: url(../img/common/bg_logo.png);
+	background-position: center;
+	background-size: cover;
+	height: 349px;
+    width: 349px;
+    display: block;
+    position: absolute;
+    bottom: 66px;
+    right: 11%;
+    z-index: -1;
 }
 .container {
 	min-width: 1120px;
@@ -268,7 +282,6 @@ a:hover {
 .footer .footer_list .item:last-child {
 	border-right: none;
 }
-
 .footer .footer_list a {
 	font-weight: bold;
 	text-align: left;
@@ -596,7 +609,7 @@ a:hover {
 }
 /* CONTACT*/
 .contact_sec01 {
-	margin-top: 61px;
+	margin-top: 62px;
 }
 .contact_sec01 .decs_txt01 {
 	letter-spacing: 0.4px;
@@ -759,7 +772,7 @@ a:hover {
 }
 /* PRiVACY*/
 .privacypolicy_sec {
-	margin-top: 61px;
+	margin-top: 62px;
 	margin-bottom: 93px;
 }
 .privacypolicy_sec .content {
@@ -783,7 +796,7 @@ a:hover {
 
 .privacypolicy_sec .content .decs02,
 .privacypolicy_sec .content ul li {
-	line-height: 1.73;
+	line-height: 1.875;
 }
 
 /* Recruit */
@@ -901,7 +914,7 @@ a:hover {
 
 /* Company page PC */
 .company_sec01 {
-	margin: 63px 0 111px;
+	margin: 62px 0 111px;
 }
 .company_sec01 .ctn {
 	display: flex;
@@ -999,6 +1012,7 @@ a:hover {
 }
 .business_sec01 figure {
 	max-width: 320px;
+	width: 32%;
 }
 .business_sec01 figure figcaption {
 	font-size: 1.2rem;
@@ -1068,7 +1082,7 @@ a:hover {
 }
 /*Results page on PC*/
 .results_sec01 {
-	padding: 70px 0 90px;
+	padding: 62px 0 90px;
 }
 .result_cnt01 {
 	margin: 50px 0 0;
@@ -1099,7 +1113,10 @@ a:hover {
 
 /*History*/
 .history_sec01 {
-	padding: 70px 0 100px;
+	padding: 62px 0 100px;
+}
+.history_sec01 .ttl_sec + .hisrory_wrapper {
+	margin-top: 45px;
 }
 .hisrory_wrapper {
 	display: flex;
@@ -1270,8 +1287,17 @@ a:hover {
 	display: flex;
 	justify-content: center;
 }
-
-
+@media only screen and (max-width: 1440px) {
+	body::after {
+		right: 0;
+	}
+	.footer .footer_list .item:first-child {
+		padding-left: 0;
+	} 
+	.footer .footer_list .item:last-child {
+		padding-right: 0;
+	}
+}
 @media only screen and (max-width: 1120px) {
 	.index .header_wrapper .logo,
 	#contents .header_wrapper .logo {
@@ -1289,6 +1315,9 @@ a:hover {
 ****************************************************/
 
 @media only screen and (max-width: 768px) {
+	body::after {
+		display: none;
+	}
 	.is_pc {
 		display: none;
 	}
@@ -1299,8 +1328,11 @@ a:hover {
 		min-width: auto;
 	}
 	.inner {
-		max-width: 96%;
+		max-width: 94%;
 		margin: 0 auto;
+	}
+	.main {
+		margin-top: 60px;
 	}
 	/* COMMON */
 	.ttl_sec01 {
@@ -1314,9 +1346,13 @@ a:hover {
 		margin: 0 auto;
 	}
     	/*header*/
+	.header {
+		height: 60px;
+	}
 	.header .hd_content {
 		background-color: #ffffff;
 		min-width: auto;
+		height: 60px;
 	}
 	.header_wrapper {
 		display: flex;
@@ -1417,8 +1453,9 @@ a:hover {
 	.top_sec02 .box_ttl,
 	.top_sec03 .box_ttl,
 	.top_sec05 .box_ttl {
-		padding: 61px 0 80px;
+		padding: 70px 0 85px;
 		height: auto;
+		margin: 15px 0;
 	}
 	.top_sec03 .wrapper_cnt.right {
 		height: auto;
@@ -1506,7 +1543,7 @@ a:hover {
 		text-align: justify;
 	}
 	.privacypolicy_sec {
-		margin-top: 30px;
+		margin-top: 42px;
 		margin-bottom: 46px;
 	}
 	.privacypolicy_sec .content {
@@ -1518,7 +1555,7 @@ a:hover {
 	}
 	/* contact */
 	.contact_sec01 {
-		margin-top: 30px;
+		margin-top: 42px;
 	}
 	.contact_sec01 .decs_txt01 {
 		margin-top: 21px;
@@ -1558,7 +1595,7 @@ a:hover {
 	}
 	/* Page Title */
 	.page_title {
-		height: 120px;
+		height: 145px;
 	}
 	.page_title h3{
 		font-size: 2.7rem;
@@ -1572,11 +1609,14 @@ a:hover {
 	}
 
 	/*Result page*/
-	.results_sec01 .list_img {
-		flex-direction: column;
+	.results_sec01 {
+		padding: 42px 0 30px;
+	}
+	.results .inner_in {
+		width: 94%;
 	}
 	.results_sec01 .list_img li {
-		width: 100%;
+		width: 32%;
 	}
 	.results_sec01 .list_img li figure {
 		text-align: center;
@@ -1588,7 +1628,7 @@ a:hover {
 	}
 	/* Business page */
 	.business_sec01 .desc_ttl {
-		font-size: 2rem;
+		font-size: 1.8rem;
 		line-height: 1.8;
 		margin: 16px 0 31px;
 	}
@@ -1598,11 +1638,11 @@ a:hover {
 	.business_sec01 .list_img, .business_sec02 .list_img {
 		justify-content: space-around;
 	}
+	.business_sec01 figure figcaption {
+		line-height: 1.5;
+	}
 	.business_sec02 .ttl_sec {
 		margin-bottom: 30px;
-	}
-	.business_sec01 figure:nth-child(odd){
-		margin-right: 20px;
 	}
 	.busi_table tbody td {
 		padding: 5px 15px;
@@ -1622,6 +1662,7 @@ a:hover {
 		width: fit-content;
 		align-self: center;
 		margin-bottom: 20px;
+		width: 32%;
 	}
 	/* Company page SP */
 	.company_sec01 {
@@ -1731,6 +1772,9 @@ a:hover {
 	}
 
 	/*History*/
+	.history_sec01 .ttl_sec + .hisrory_wrapper {
+		margin-top: 30px;
+	}
 	.hisrory_wrapper .detail .datetime {
 		min-width: 80px;
 		width: 80px;
@@ -1782,25 +1826,44 @@ a:hover {
 		font-size: 1.6rem;
 		line-height: 2.4;
 	}
+	.current a span::after {
+		display: none;
+	}
+	.current a span {
+		color: #f9c816;
+	}
 }
 @media only screen and (max-width: 690px) {
-	.business_sec01 figure:nth-child(odd) {
-		margin-right: 0;
-	}	
-	.business_sec01 .list_img, .business_sec02 .list_img {
-		flex-direction: column;
-		justify-content: center;
-	}
-	.list_img figure {
-		align-self: center;
-	}
 
 	.table_width {
 		width: 648px;
 	}
-
+	.business_sec01 .list_img figure, .business_sec02 .list_img img {
+		max-width: 100%;
+		width: 48%;
+	}
+	.business_sec02 .list_img {
+		justify-content: space-between;
+	}
+	.results_sec01 .list_img li {
+		width: 48%;
+	}
+	.results_sec01 .list_img li figure {
+		text-align: left;
+	}
 }
-
+@media only screen and (max-width: 414px) {
+	.business_sec01 .list_img figure, .business_sec02 .list_img img {
+		width: 100%;
+	}
+	.business_sec01 figure,.business_sec01 img {
+		width: 100%;
+	}
+	.results_sec01 .list_img li,
+	.results_sec01 .list_img li img {
+		width: 100%;
+	} 
+}
 
 
 
