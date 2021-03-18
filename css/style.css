@@ -1635,9 +1635,6 @@ a:hover {
 	.business_sec01 .list {
 		font-size: 1.4rem;
 	}
-	.business_sec01 .list_img, .business_sec02 .list_img {
-		justify-content: space-around;
-	}
 	.business_sec01 figure figcaption {
 		line-height: 1.5;
 	}
