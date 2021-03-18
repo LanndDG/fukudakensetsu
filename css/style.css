@@ -347,7 +347,7 @@ a:hover {
 .breadcrumb ul li a{
 	color: inherit;
 }
-.breadcrumb ul li:first-child::after{
+.breadcrumb ul li:not(:last-child)::after{
 	content: ">";
 	position: absolute;
 	padding-left: 15px;
@@ -1143,13 +1143,12 @@ a:hover {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding-left: 10px;
+	margin-left: 8px;
 } 
 .hisrory_wrapper .detail .datetime {
-	margin-left: 9px;
-	width: 120px;
-	min-width: 120px;
-	font-display: flex;
+	width: 112px;
+	min-width: 112px;
+	display: flex;
 	align-items: center;
 }
 .hisrory_wrapper .detail::before {
@@ -1158,13 +1157,14 @@ a:hover {
 	height: 7px;
 	min-width: 7px;
 	background-color: #f9c816;
-	margin-right: 7px;
+	margin-right: 5px;
 	display: inline-block;
 }
 .hisrory_wrapper .detail .desc {
 	line-height: 2.25;
 	letter-spacing: 0.8px;
 	text-align: justify;
+	padding: 5px 0;
 }
 .detail_wrapper {
 	width: 100%;
@@ -1181,7 +1181,7 @@ a:hover {
 	padding: 70px 0 100px;
 }
 .sitemap_list {
-	margin-top: 73px;
+	margin-top: 50px;
 }
 .sitemap_item {
 	width: 400px;
@@ -1203,6 +1203,7 @@ a:hover {
 }
 .sitemap_item a {
 	font-size: 1.8rem;
+	font-weight: 600;
 	line-height: 2;
 	letter-spacing: 0.9px;
 	color: #f9c816;
@@ -1427,6 +1428,9 @@ a:hover {
 	.footer .copyright {
 		padding: 5px 0 15px;
 	}
+	.scroll-hint-icon {
+		top: calc(38% - 25px) !important;
+	}
     /* TOP*/
 	.mv {
 		padding: 240px 0;
@@ -1629,9 +1633,6 @@ a:hover {
 	.business_sec01 .list {
 		font-size: 1.4rem;
 	}
-	.business_sec01 .list_img, .business_sec02 .list_img {
-		justify-content: space-around;
-	}
 	.business_sec01 figure figcaption {
 		line-height: 1.5;
 	}
@@ -1816,18 +1817,22 @@ a:hover {
 	.sitemap_list {
 		margin-top: 40px;
 	}
+	.sitemap_item a {
+		font-size: 1.6rem;
+		line-height: 2.4;
+	}
 	.current a span::after {
 		display: none;
 	}
 	.current a span {
 		color: #f9c816;
 	}
-	
 }
 @media only screen and (max-width: 690px) {
 
 	.table_width {
 		width: 648px;
+		min-height: 150px;
 	}
 	.business_sec01 .list_img figure, .business_sec02 .list_img img {
 		max-width: 100%;
