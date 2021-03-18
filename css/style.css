@@ -152,6 +152,20 @@ a:hover {
 	letter-spacing: 1.26px;
 	text-align: left;
 	padding: 0 13px;
+	position: relative;
+	text-align: center;
+}
+.current a span::after {
+    content: "";
+    background-color: #f9c816;
+    width: 75px;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8px;
+	position: absolute;
+	left: 0;
+	right: 0;
 }
 .wrapper_gNav nav .list .mail_contact {
 	width: 142px;
@@ -911,7 +925,7 @@ a:hover {
 	margin-top: 26px;
 }
 .company_sec01 .ctn .right_ctn {
-	margin-top: 30px;
+	margin-top: 15px;
 }
 
 .company_sec02 {
@@ -937,6 +951,9 @@ a:hover {
 .company_sec02 table td span {
 	display: block;
 	text-indent: -8px;
+}
+.company_sec02 table td span a {
+	color: #000000;
 }
 .company_sec02 .submit {
 	width: 350px;
