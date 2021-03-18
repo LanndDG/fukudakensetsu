@@ -1433,6 +1433,9 @@ a:hover {
 	.footer .copyright {
 		padding: 5px 0 15px;
 	}
+	.scroll-hint-icon {
+		top: calc(38% - 25px) !important;
+	}
     /* TOP*/
 	.mv {
 		padding: 240px 0;
@@ -1834,6 +1837,7 @@ a:hover {
 
 	.table_width {
 		width: 648px;
+		min-height: 150px;
 	}
 	.business_sec01 .list_img figure, .business_sec02 .list_img img {
 		max-width: 100%;
