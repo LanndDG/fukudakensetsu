@@ -1188,7 +1188,7 @@ a:hover {
 	padding: 70px 0 100px;
 }
 .sitemap_list {
-	margin-top: 73px;
+	margin-top: 50px;
 }
 .sitemap_item {
 	width: 400px;
@@ -1210,6 +1210,7 @@ a:hover {
 }
 .sitemap_item a {
 	font-size: 1.8rem;
+	font-weight: 600;
 	line-height: 2;
 	letter-spacing: 0.9px;
 	color: #f9c816;
@@ -1634,9 +1635,6 @@ a:hover {
 	.business_sec01 .list {
 		font-size: 1.4rem;
 	}
-	.business_sec01 .list_img, .business_sec02 .list_img {
-		justify-content: space-around;
-	}
 	.business_sec01 figure figcaption {
 		line-height: 1.5;
 	}
@@ -1821,13 +1819,16 @@ a:hover {
 	.sitemap_list {
 		margin-top: 40px;
 	}
+	.sitemap_item a {
+		font-size: 1.6rem;
+		line-height: 2.4;
+	}
 	.current a span::after {
 		display: none;
 	}
 	.current a span {
 		color: #f9c816;
 	}
-	
 }
 @media only screen and (max-width: 690px) {
 
