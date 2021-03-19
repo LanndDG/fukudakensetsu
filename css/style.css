@@ -805,12 +805,16 @@ a:hover {
 }
 .recruit_table tr td span {
 	display: block;
+	font-weight: 500;
 }
 .recruit_table tr td .ttl_table01 { 
 	padding-top: 7px;
 	font-size: 1.6rem;
 	line-height: 1.5;
 	font-weight: 500;
+}
+.recruit_sec01 .space_15 {
+	margin-left: 15px;
 }
 /* .recruit_table tr td .first_list {
 	padding-top: 8px;
@@ -1052,7 +1056,7 @@ a:hover {
 	width: 29%;
 }
 .busi_table01 tbody td:nth-child(5n){
-	min-width: 89px;
+	min-width: 91px;
 }
 .busi_table01 tbody th {
 	width: 27%;
