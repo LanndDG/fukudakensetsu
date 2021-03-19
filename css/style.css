@@ -123,11 +123,14 @@ a:hover {
 	margin: 0 auto;
 }
 #contents .header_wrapper {
-	max-width: 1600px;
+	max-width: 1450px;
 }
 .header_wrapper .logo {
 	display: flex;
 	margin-left: 144px;
+}
+#contents .header_wrapper .logo {
+	margin-left: 0;
 }
 .logo a {
 	display: flex;
