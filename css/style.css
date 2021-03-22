@@ -1738,6 +1738,9 @@ a:hover {
 	.recruit_table tr td {
 		padding: 10px 15px;
 	}
+	.recruit_table tr td span {
+		line-height: 1.5;
+	}
 	.recruit_table tr td .ttl_table01 {
 		font-size: 1.6rem;
 	}
