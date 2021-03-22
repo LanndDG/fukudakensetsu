@@ -275,7 +275,7 @@ a:hover {
 }
 
 .footer .footer_list .item {
-	padding: 0 43px;
+	padding: 0 35px;
 	border-right: 1px solid #ffffff;
 }
 
@@ -1429,6 +1429,12 @@ a:hover {
         padding: 10px 20px;
 		margin-top: 0;
     }
+	.footer .footer_list .item:last-child {
+		padding-right: 20px;
+	}
+	.footer .footer_list .item:first-child {
+		padding-left: 20px;
+	}
 	.footer .footer_list a {
 		font-size: 1.4rem;
 	}
