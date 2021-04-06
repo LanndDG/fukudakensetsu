@@ -1110,7 +1110,33 @@ a:hover {
 .result_cnt01 {
 	margin-top: 50px;
 }
-
+.result_table {
+	width: 100%;
+	margin-top: 50px;
+}
+.result_table th {
+	font-size: 1.6rem;
+	padding: 18px 10px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: solid 1px #b3b3b3;
+    vertical-align: middle;
+}
+.result_table tbody td {
+    padding: 10px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+    text-align: left;
+    border: solid 1px #b3b3b3;
+    vertical-align: middle;
+    text-align: left;
+}
+.result_table tbody td:nth-child(4) {
+	text-align: center;
+}
 /*History*/
 .history_sec01 {
 	padding: 62px 0 100px;
@@ -1632,6 +1658,14 @@ a:hover {
 	.result_cnt02, 
 	.result_cnt01 {
 		margin-top: 30px;
+	}
+	.result_table tbody td,
+	.result_table th {
+		font-size: 1.4rem;
+		padding: 10px;
+	}
+	.result_table {
+		margin-top: 40px;
 	}
 	/* Business page */
 	.business_sec01 .desc_ttl {
