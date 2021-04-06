@@ -1114,6 +1114,21 @@ a:hover {
 	width: 100%;
 	margin-top: 50px;
 }
+.result_table thead th:nth-child(1) {
+	width: 10%;
+}
+.result_table thead th:nth-child(2) {
+	width: 25%;
+} 
+.result_table thead th:nth-child(3) {
+	width: 45%;
+} 
+.result_table thead th:nth-child(4) {
+	width: 12%;
+} 
+.result_table thead th:nth-child(5) {
+	width: 8%;
+} 
 .result_table th {
 	font-size: 1.6rem;
 	padding: 18px 10px;
