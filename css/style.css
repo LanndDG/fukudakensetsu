@@ -1682,6 +1682,10 @@ a:hover {
 	.result_table {
 		margin-top: 40px;
 	}
+	.result_table thead th:nth-child(5) {
+		width: 10%;
+	}
+	
 	/* Business page */
 	.business_sec01 .desc_ttl {
 		font-size: 1.8rem;
