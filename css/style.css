@@ -1424,17 +1424,13 @@ a:hover {
         margin: 10px 0 0;
 		flex-wrap: wrap;
     }
-    .footer .footer_list .item {
+	.footer .footer_list .item,
+	.footer .footer_list .item:last-child,
+	.footer .footer_list .item:first-child {
         border-right: none;
-        padding: 10px 20px;
+        padding: 10px 15px;
 		margin-top: 0;
     }
-	.footer .footer_list .item:last-child {
-		padding-right: 20px;
-	}
-	.footer .footer_list .item:first-child {
-		padding-left: 20px;
-	}
 	.footer .footer_list a {
 		font-size: 1.4rem;
 	}
@@ -1738,9 +1734,6 @@ a:hover {
 	.recruit_table tr td {
 		padding: 10px 15px;
 	}
-	.recruit_table tr td span {
-		line-height: 1.5;
-	}
 	.recruit_table tr td .ttl_table01 {
 		font-size: 1.6rem;
 	}
@@ -1780,6 +1773,9 @@ a:hover {
 	}
 	.recruit_sec02 .desc {
 		margin: 30px 0 20px;
+	}
+	.recruit_table tr td span {
+		line-height: 1.5;
 	}
 
 	/*History*/

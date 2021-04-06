@@ -135,9 +135,6 @@ $("#form").validate({
       return $.trim(value);
   },
 rules: {
-    '会社名': {
-        required: true
-    },
     'お名前': {
         required: true
     },
@@ -151,9 +148,6 @@ rules: {
     }
 },
 messages: {
-    '会社名': {
-        required: "未入力です。",
-    },
     'お名前': {
         required: "未入力です。",
     },
@@ -173,12 +167,10 @@ messages: {
           error.appendTo($(".is_error_" + name));
       }
       if ($(".table-contact input").find(".is-error")) {
-        $(".table-contact tbody tr:nth-child(1) td").css("padding-top", "12px");
-        $(".table-contact tbody tr:nth-child(1) td").css("padding-bottom", "12px");
-        $(".table-contact tbody tr:nth-child(2) td").css("padding-top", "12px");
-        $(".table-contact tbody tr:nth-child(2) td").css("padding-bottom", "12px");
-        $(".table-contact tbody tr:nth-child(3) td").css("padding-top", "12px");
-        $(".table-contact tbody tr:nth-child(3) td").css("padding-bottom", "12px")
+          $(".table-contact tbody tr:nth-child(2) td").css("padding-top", "12px");
+          $(".table-contact tbody tr:nth-child(2) td").css("padding-bottom", "12px");
+          $(".table-contact tbody tr:nth-child(3) td").css("padding-top", "12px");
+          $(".table-contact tbody tr:nth-child(3) td").css("padding-bottom", "12px")
       }
   },
 
