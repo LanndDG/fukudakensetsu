@@ -1118,17 +1118,15 @@ a:hover {
 	width: 10%;
 }
 .result_table thead th:nth-child(2) {
-	width: 25%;
+	width: 30%;
 } 
 .result_table thead th:nth-child(3) {
 	width: 45%;
 } 
 .result_table thead th:nth-child(4) {
-	width: 12%;
+	width: 15%;
 } 
-.result_table thead th:nth-child(5) {
-	width: 8%;
-} 
+
 .result_table th {
 	font-size: 1.6rem;
 	padding: 18px 10px;
